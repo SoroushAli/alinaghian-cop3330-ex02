@@ -1,4 +1,11 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 1 Solution
+ *  Copyright 2021 first_name last_name
+ */
 package base;
+
+import java.util.Scanner;
+
 /*
 Example Output
 
@@ -18,7 +25,27 @@ Implement this program using a graphical user interface and update the character
 If your language doesn’t have a particularly friendly GUI library, try doing this exercise with HTML and JavaScript instead.
  */
 public class App {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        //App myApp = new App();
+
+        String input = readInput();
+        int length = getLength(input);
+        printOutput(input, length);
     }
+
+    private static void printOutput(String input, int length) {
+        System.out.println("What is the input string? " + input + "\n" + input + " has " + length + " characters.");
+    }
+
+    private static int getLength(String input) {
+        return input.length();
+    }
+
+    private static String readInput() {
+        return in.next();
+    }
+
+
 }
