@@ -14,8 +14,11 @@ Use a built-in function of the programming language to determine the length of t
 Challenges
 
 If the user enters nothing, state that the user must enter something into the program.
-Implement this program using a graphical user interface and update the character counter every time a key is pressed. If your language doesn’t have a particularly friendly GUI library, try doing this exercise with HTML and JavaScript instead.
+Implement this program using a graphical user interface and update the character counter every time a key is pressed.
+If your language doesn’t have a particularly friendly GUI library, try doing this exercise with HTML and JavaScript instead.
  */
 public class App {
-
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
 }
